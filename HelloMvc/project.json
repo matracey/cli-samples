@@ -10,7 +10,7 @@
     "dependencies" : {
         "Microsoft.NETCore.App": {
             "type": "platform",
-            "version": "1.0.0-rc2-23931"
+            "version": "1.0.0-rc2-*"
         },
         "Microsoft.Extensions.Logging.Console": "1.0.0-*",
         "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-*",
@@ -18,6 +18,7 @@
         "Microsoft.AspNetCore.StaticFiles": "1.0.0-*",
         "Microsoft.AspNetCore.Diagnostics": "1.0.0-*",
         "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
+        "Microsoft.AspNetCore.Hosting.Server.Abstractions": "1.0.0-*",
         "System.Runtime.Serialization.Primitives": "4.1.1-*"
     },
     "frameworks": {
@@ -26,12 +27,5 @@
           "portable-net45+wp80+win8+wpa81+dnxcore50"
         ]
       }
-    },
-
-    "tools": {
-      "dotnet-publish-iis": "1.0.0-*"
-    },
-    "scripts": {
-      "postpublish": "dotnet publish-iis --publish-folder %publish:OutputPath%"
     }
 }
